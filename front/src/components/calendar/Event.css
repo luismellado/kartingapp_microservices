@@ -1,0 +1,36 @@
+.calendar-event {
+  padding: 4px 8px;
+  border-radius: 4px;
+  color: white;
+  font-size: 12px;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+}
+
+.calendar-event:hover {
+  filter: brightness(0.9);
+}
+
+.month-event {
+  margin-bottom: 2px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.day-event {
+  width: 100%;
+}
+
+.event-title {
+  font-weight: 500;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.event-time {
+  font-size: 10px;
+  opacity: 0.9;
+}

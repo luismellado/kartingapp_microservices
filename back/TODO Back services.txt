@@ -1,0 +1,20 @@
+En bookingservice:
+	-PaymentDetailService: 
+		-Transformar la petición de servicios del monolito a petición de servicios a los microservicios correspondientes.
+	-PaymentDetailController: 
+		-Obtener los datos del controlador "savePaymentDetail" como un DTO para manejarlo como JSON.
+		-Cambiar el @CrossOrigin para manejar archivos Excel
+		-Modificar el controlador "excelVoucher" para ejecutar correctamente la descarga del voucher
+En fcdiscountservice:
+	-Explorar la posibilidad de calcular el descuento en este microservicio
+En qopdiscountservice:
+	-Explorar la posibilidad de calcular el descuento en este microservicio
+En reportservice:
+	-ReportService:
+		-Transformar la petición de servicios del monolito a petición de servicios a los microservicios
+	-ReportController_
+		-Considerar cambiar la petición de datos de @PathVariable a un DTO para manejarlo como JSON
+En weeklyrackservice:
+	-Terminar lo restante
+
+		

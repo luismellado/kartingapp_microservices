@@ -1,0 +1,76 @@
+.week-view {
+  height: 100%;
+  overflow-y: auto;
+}
+
+.time-grid {
+  display: flex;
+  flex-direction: column;
+}
+
+.time-labels {
+  display: grid;
+  grid-template-columns: 60px repeat(7, 1fr);
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.corner-header {
+  border-right: 1px solid #e0e0e0;
+}
+
+.day-column-header {
+  text-align: center;
+  padding: 8px;
+  border-right: 1px solid #e0e0e0;
+}
+
+.day-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.day-header.today {
+  background-color: #e8f0fe;
+  border-radius: 4px;
+}
+
+.day-name {
+  font-weight: 500;
+  color: #70757a;
+}
+
+.day-number {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.time-slots {
+  display: flex;
+  flex-direction: column;
+}
+
+.time-row {
+  display: grid;
+  grid-template-columns: 60px repeat(7, 1fr);
+  min-height: 60px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.time-label {
+  padding: 8px;
+  color: #70757a;
+  text-align: right;
+  border-right: 1px solid #e0e0e0;
+  font-size: 12px;
+}
+
+.time-cell {
+  border-right: 1px solid #e0e0e0;
+  position: relative;
+  cursor: pointer;
+}
+
+.time-cell:hover {
+  background-color: #f8f9fa;
+}

@@ -1,0 +1,305 @@
+.reservation-system {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+}
+
+.reservation-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+h3 {
+  color: #444;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+.reservation-form,
+.participants-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-row {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  flex: 1;
+  min-width: 200px;
+}
+
+label {
+  font-weight: 600;
+  color: #555;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="date"],
+input[type="time"],
+select {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+  transition: border-color 0.3s;
+}
+
+input:focus,
+select:focus {
+  outline: none;
+  border-color: #4a90e2;
+  box-shadow: 0 0 0 2px rgba(74, 144, 226, 0.2);
+}
+
+input.error {
+  border-color: #e74c3c;
+}
+
+.error-message {
+  color: #e74c3c;
+  font-size: 14px;
+  margin-top: 4px;
+}
+
+.radio-group {
+  display: flex;
+  gap: 15px;
+  margin-top: 5px;
+}
+
+.radio-label {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.options-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  background-color: white;
+}
+
+.options-table th,
+.options-table td {
+  padding: 12px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+.options-table th {
+  background-color: #f2f2f2;
+  font-weight: 600;
+}
+
+.options-table tr:hover {
+  background-color: #f5f5f5;
+}
+
+.options-table td:first-child {
+  width: 50px;
+  text-align: center;
+}
+
+.submit-button,
+.back-button {
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 10px;
+}
+
+.submit-button:hover {
+  background-color: #3a7bc8;
+}
+
+.back-button {
+  background-color: #6c757d;
+}
+
+.back-button:hover {
+  background-color: #5a6268;
+}
+
+.form-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+/* Segunda vista */
+.reservation-summary {
+  background-color: #e9f0f8;
+  padding: 15px;
+  border-radius: 6px;
+  margin-bottom: 20px;
+}
+
+.reservation-summary p {
+  margin: 8px 0;
+}
+
+.participant-card {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.discount-group {
+  display: flex;
+  align-items: center;
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.price-summary {
+  margin-top: 15px;
+  background-color: #f5f5f5;
+  padding: 15px;
+  border-radius: 6px;
+}
+
+.price-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.price-item.discount {
+  color: #27ae60;
+}
+
+.price-item.surcharge {
+  color: #e67e22;
+}
+
+.price-item.total {
+  font-weight: bold;
+  border-top: 1px solid #ddd;
+  padding-top: 8px;
+  margin-top: 8px;
+}
+
+.total-price {
+  text-align: right;
+  margin: 20px 0;
+  font-size: 20px;
+}
+
+.total-price h3 {
+  color: #333;
+  margin: 0;
+}
+
+/* Estilos para fechas especiales */
+.fecha-especial-select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  font-size: 16px;
+  background-color: white;
+}
+
+.fecha-especial-info {
+  margin-top: 10px;
+  padding: 12px;
+  background-color: #fff8e1;
+  border-radius: 4px;
+  border-left: 4px solid #ffc107;
+}
+
+.fecha-especial-badge {
+  display: inline-block;
+  background-color: #ff9800;
+  color: white;
+  padding: 3px 8px;
+  border-radius: 12px;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.fecha-especial-descripcion {
+  margin: 0;
+  color: #555;
+  font-size: 14px;
+}
+
+.fecha-especial-texto {
+  color: #e67e22;
+  font-weight: 600;
+}
+
+.fecha-especial-descripcion-resumen {
+  font-size: 14px;
+  color: #666;
+  font-style: italic;
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px dashed #ddd;
+}
+
+@media (max-width: 768px) {
+  .reservation-container {
+    padding: 15px;
+    border-radius: 0;
+  }
+
+  .form-row {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .form-group {
+    min-width: 100%;
+  }
+
+  .radio-group {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .options-table {
+    font-size: 14px;
+  }
+
+  .options-table th,
+  .options-table td {
+    padding: 8px;
+  }
+}

@@ -1,0 +1,16 @@
+.calendar {
+  font-family: "Roboto", Arial, sans-serif;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  overflow: hidden;
+}
+
+.calendar-body {
+  height: 80vh;
+  overflow-y: auto;
+}

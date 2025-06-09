@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: qopdiscountservice
+  cloud:
+    compatibility-verifier:
+      enabled: false
+    config:
+      enabled: true
+      uri: http://localhost:8081
+  datasource:
+    url: jdbc:mysql://localhost:3306/kartingapp_db
+    username: root
+    password: Tingeso1-2025
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update

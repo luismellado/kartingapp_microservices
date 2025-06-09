@@ -1,0 +1,56 @@
+.day-view {
+  height: 100%;
+  overflow-y: auto;
+}
+
+.day-view-header {
+  padding: 16px;
+  text-align: center;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.day-view-header.today {
+  background-color: #e8f0fe;
+}
+
+.day-name {
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.day-date {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.day-time-slots {
+  display: flex;
+  flex-direction: column;
+}
+
+.day-time-slot {
+  display: flex;
+  min-height: 60px;
+  border-bottom: 1px solid #e0e0e0;
+  cursor: pointer;
+}
+
+.day-time-slot:hover {
+  background-color: #f8f9fa;
+}
+
+.time-label {
+  width: 60px;
+  padding: 8px;
+  color: #70757a;
+  text-align: right;
+  border-right: 1px solid #e0e0e0;
+  font-size: 12px;
+  flex-shrink: 0;
+}
+
+.time-slot-content {
+  flex-grow: 1;
+  position: relative;
+  padding: 4px;
+}
