@@ -1,4 +1,4 @@
 FROM openjdk:17
-ARG JAR_FILE=target/fcdiscountservice.jar
-COPY ${JAR_FILE} fcdiscountservice.jar
-ENTRYPOINT ["java","-jar","/fcdiscountservice.jar"]
+ARG JAR_FILE=build/libs/fcdiscountservice-0.0.1-SNAPSHOT.jar
+COPY ${JAR_FILE} fcdiscountservice-0.0.1-SNAPSHOT.jar
+ENTRYPOINT ["java","-jar","/fcdiscountservice-0.0.1-SNAPSHOT.jar"]

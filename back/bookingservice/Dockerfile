@@ -1,4 +1,4 @@
 FROM openjdk:17
-ARG JAR_FILE=target/bookingservice.jar
-COPY ${JAR_FILE} bookingservice.jar
-ENTRYPOINT ["java","-jar","/bookingservice.jar"]
+ARG JAR_FILE=build/libs/bookingservice-0.0.1-SNAPSHOT.jar
+COPY ${JAR_FILE} bookingservice-0.0.1-SNAPSHOT.jar
+ENTRYPOINT ["java","-jar","/bookingservice-0.0.1-SNAPSHOT.jar"]

@@ -1,16 +1,12 @@
 server:
   port: 8081
 spring:
-  profiles:
-    active: native
   cloud:
     config:
       server:
-        native:
-          search-locations: file:../config-data
-        #git:
-          #default-label: main
-          #uri: https://github.com/amigo1975/microsevices-data-project
-          #search-paths: config-data
+        git:
+          default-label: master
+          uri: https://github.com/luismellado/kartingapp_microservices.git
+          search-paths: back/config-data
   application:
     name: config-service
